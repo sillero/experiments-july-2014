@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>sillero - Demo Reel - July 2014</title>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+  <!-- SVG sprite, inline version (remove viewbox from <svg>'s) -->
+  <!-- <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="172" height="32" viewBox="0 0 172 32">
+    <defs>
+      <symbol id="icon-twitter" viewBox="0 0 30 32">
+      	<path class="path1" d="M0.786 24.839q0.625 0.071 1.393 0.071 4.018 0 7.161-2.464-1.875-0.036-3.357-1.152t-2.036-2.848q0.589 0.089 1.089 0.089 0.768 0 1.518-0.196-2-0.411-3.313-1.991t-1.313-3.67v-0.071q1.214 0.679 2.607 0.732-1.179-0.786-1.875-2.054t-0.696-2.75q0-1.571 0.786-2.911 2.161 2.661 5.259 4.259t6.634 1.777q-0.143-0.679-0.143-1.321 0-2.393 1.688-4.080t4.080-1.688q2.5 0 4.214 1.821 1.946-0.375 3.661-1.393-0.661 2.054-2.536 3.179 1.661-0.179 3.321-0.893-1.196 1.75-2.893 2.982 0.018 0.25 0.018 0.75 0 2.321-0.679 4.634t-2.063 4.438-3.295 3.759-4.607 2.607-5.768 0.973q-4.839 0-8.857-2.589z"></path>
+      </symbol>
+      <symbol id="icon-envelope" viewBox="0 0 32 32">
+      	<path class="path1" d="M0 26.857v-14.179q0.786 0.875 1.804 1.554 6.464 4.393 8.875 6.161 1.018 0.75 1.652 1.17t1.688 0.857 1.964 0.438h0.036q0.911 0 1.964-0.438t1.688-0.857 1.652-1.17q3.036-2.196 8.893-6.161 1.018-0.696 1.786-1.554v14.179q0 1.179-0.839 2.018t-2.018 0.839h-26.286q-1.179 0-2.018-0.839t-0.839-2.018zM0 7.821q0-1.393 0.741-2.321t2.116-0.929h26.286q1.161 0 2.009 0.839t0.848 2.018q0 1.411-0.875 2.696t-2.179 2.196q-6.714 4.661-8.357 5.804-0.179 0.125-0.759 0.545t-0.964 0.679-0.929 0.58-1.027 0.482-0.893 0.161h-0.036q-0.411 0-0.893-0.161t-1.027-0.482-0.929-0.58-0.964-0.679-0.759-0.545q-1.625-1.143-4.679-3.259t-3.661-2.545q-1.107-0.75-2.089-2.063t-0.982-2.438z"></path>
+      </symbol>
+      <symbol id="icon-mail-reply" viewBox="0 0 32 32">
+      	<path class="path1" d="M0 11.429q0-0.464 0.339-0.804l9.143-9.143q0.339-0.339 0.804-0.339t0.804 0.339 0.339 0.804v4.571h4q12.732 0 15.625 7.196 0.946 2.393 0.946 5.946 0 2.964-2.268 8.054-0.054 0.125-0.188 0.429t-0.241 0.536-0.232 0.393q-0.214 0.304-0.5 0.304-0.268 0-0.42-0.179t-0.152-0.446q0-0.161 0.045-0.473t0.045-0.42q0.089-1.214 0.089-2.196 0-1.804-0.313-3.232t-0.866-2.473-1.429-1.804-1.884-1.241-2.375-0.759-2.75-0.384-3.134-0.107h-4v4.571q0 0.464-0.339 0.804t-0.804 0.339-0.804-0.339l-9.143-9.143q-0.339-0.339-0.339-0.804z"></path>
+      </symbol>
+      <symbol id="icon-github-alt" viewBox="0 0 30 32">
+      	<path class="path1" d="M0 18.571q0-4.232 2.429-7.071-0.482-1.464-0.482-3.036 0-2.071 0.911-3.893 1.929 0 3.393 0.705t3.375 2.205q2.625-0.625 5.518-0.625 2.643 0 5 0.571 1.875-1.464 3.339-2.161t3.375-0.696q0.911 1.821 0.911 3.893 0 1.554-0.482 3 2.429 2.857 2.429 7.107 0 3.696-1.089 5.911-0.679 1.375-1.884 2.375t-2.518 1.536-3.036 0.848-3.063 0.393-2.982 0.080q-1.393 0-2.536-0.054t-2.634-0.223-2.723-0.536-2.446-0.92-2.161-1.446-1.536-2.054q-1.107-2.196-1.107-5.911zM4 21.714q0 1.571 0.571 2.741t1.446 1.839 2.179 1.071 2.5 0.527 2.661 0.125h3q1.464 0 2.661-0.125t2.5-0.527 2.179-1.071 1.446-1.839 0.571-2.741q0-2.143-1.232-3.643t-3.339-1.5q-0.732 0-3.482 0.375-1.268 0.196-2.804 0.196t-2.804-0.196q-2.714-0.375-3.482-0.375-2.107 0-3.339 1.5t-1.232 3.643zM6.857 21.714q0-0.714 0.223-1.464t0.768-1.357 1.295-0.607 1.295 0.607 0.768 1.357 0.223 1.464-0.223 1.464-0.768 1.357-1.295 0.607-1.295-0.607-0.768-1.357-0.223-1.464zM18.286 21.714q0-0.714 0.223-1.464t0.768-1.357 1.295-0.607 1.295 0.607 0.768 1.357 0.223 1.464-0.223 1.464-0.768 1.357-1.295 0.607-1.295-0.607-0.768-1.357-0.223-1.464z"></path>
+      </symbol>
+    </defs>
+  </svg> -->
+  <!-- SVG sprite -->
+  
+  <div id="center-piece">
+    <div class="circle-wrapper">
+      <div class="circle">
+        <input type="checkbox" id="toggle-center-piece">
+        <label class="front" for="toggle-center-piece" data-command="0">
+          <span>
+            <h4>july 2014 experiments</h4>
+            Please, allow the camera and the microfone to be accessed :) Thanks!<br><br>
+            getUserMedia, canvas, SVG sprites, flexbox, ultrasonic networking
+            <h5>contact me</h5>
+          </span>
+        </label>
+        <div class="back">
+          <!-- <img src="assets/images/sillero_square.jpeg" alt="" /> -->
+          <div class="contact">
+            <label for="toggle-center-piece" data-command="1"><svg class="icon icon-mail-reply" viewBox="0 0 32 32"><use xlink:href="assets/images/sprites.svg#icon-mail-reply"></use></svg> back</label>
+            <h1>gustavo sillero <small>development & design</small></h1>
+            <ul>
+              <li><a href="github.com/sillero" class="github" target="blank"><svg class="icon icon-github-alt" viewBox="0 0 30 32"><use xlink:href="assets/images/sprites.svg#icon-github-alt"></use></svg></a></li>
+              <li><a href="twitter.com/sillero" class="twitter" target="blank"><svg class="icon icon-twitter" viewBox="0 0 30 32"><use xlink:href="assets/images/sprites.svg#icon-twitter"></use></svg></a></li>
+              <li><a href="mailto:gustavo@sille.ro" class="email" target="blank"><svg class="icon icon-envelope" viewBox="0 0 32 32"><use xlink:href="assets/images/sprites.svg#icon-envelope"></use></svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="user-media">
+    <video></video>
+    <canvas></canvas>
+  </div>
+  
+  <script src="assets/javascript/vendor/zepto.min.js"></script>
+  <script src="assets/javascript/vendor/getusermedia.bundle.js"></script>
+  <script src="assets/javascript/vendor/color-thief.modified.js"></script>
+  <script src="assets/javascript/vendor/sonicnet.js"></script>
+  <script src="assets/javascript/index.js"></script>
+</body>
+</html>

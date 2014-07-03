@@ -1,0 +1,158 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2014 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Brownfox
+ * License URL: http://www.fontspring.com/fflicense/brownfox
+ *
+ *
+ */
+@font-face {
+  font-family: 'geometria';
+  src: url('Geometria-Light-webfont.eot');
+  src: url('Geometria-Light-webfont.eot?#iefix') format('embedded-opentype'), url('Geometria-Light-webfont.woff') format('woff'), url('Geometria-Light-webfont.ttf') format('truetype'), url('Geometria-Light-webfont.svg#geometria_lightlight') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: geometria; }
+
+#center-piece {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  perspective: 1000;
+  width: 400px;
+  height: 400px;
+  border-radius: 200px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -200px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.5s;
+  background-color: #522352;
+  background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* FF3.6+ */
+  background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* IE10+ */
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* W3C */ }
+  #center-piece #toggle-center-piece {
+    display: none; }
+  #center-piece label {
+    cursor: pointer; }
+  #center-piece .circle-wrapper {
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -170px;
+    margin-top: -170px;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3); }
+    #center-piece .circle-wrapper, #center-piece .circle-wrapper .front {
+      border-radius: 170px;
+      overflow: hidden; }
+    #center-piece .circle-wrapper .circle {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      border-radius: 170px;
+      overflow: hidden; }
+    #center-piece .circle-wrapper .circle {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      transform: rotate(0deg); }
+    #center-piece .circle-wrapper #toggle-center-piece:checked + .front {
+      -webkit-transform: translateX(-100%);
+      -moz-transform: translateX(-100%);
+      transform: translateX(-100%); }
+    #center-piece .circle-wrapper .front {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      background: #fff;
+      z-index: 1;
+      text-align: center;
+      transition: 0.3s ease-in-out; }
+    #center-piece .circle-wrapper .front span {
+      width: 100%;
+      padding: 20px; }
+    #center-piece .circle-wrapper .back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0; }
+    #center-piece .circle-wrapper .back img {
+      width: 100%; }
+    #center-piece .circle-wrapper .contact {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      fill: #fff;
+      text-align: center; }
+    #center-piece .circle-wrapper .contact label {
+      margin-top: 10%;
+      padding: 20px;
+      display: inline-block;
+      opacity: 0.5; }
+    #center-piece .circle-wrapper .contact label .icon {
+      width: 14px;
+      height: 14px; }
+    #center-piece .circle-wrapper .contact h1 {
+      position: absolute;
+      top: 39%;
+      font-size: 32px;
+      padding: 0;
+      margin: 0;
+      display: block;
+      width: 100%; }
+    #center-piece .circle-wrapper .contact h1 small {
+      font-size: 0.5em;
+      display: block; }
+    #center-piece .circle-wrapper .contact ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      position: absolute;
+      bottom: 15%;
+      left: 0; }
+    #center-piece .circle-wrapper .contact li {
+      display: inline-block; }
+    #center-piece .circle-wrapper .contact a {
+      color: #fff;
+      text-decoration: none; }
+    #center-piece .circle-wrapper .contact a .icon {
+      width: 32px;
+      height: 32px;
+      padding: 10px; }
+
+#user-media {
+  display: none; }

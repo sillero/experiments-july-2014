@@ -1,0 +1,178 @@
+@import "geometria-webfont";
+body {
+  font-family: geometria;
+}
+
+#center-piece {
+  $center-piece-size: 400px;
+  
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  perspective: 1000;
+  
+  width: $center-piece-size;
+  height: $center-piece-size;
+  border-radius: $center-piece-size / 2;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -1 * $center-piece-size / 2;
+  margin-top: -1 * $center-piece-size / 2;
+  
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, .3);
+  transition: background-color .5s;
+  
+  background-color: rgb(82, 35, 82);
+  background-image: -moz-linear-gradient(135deg, rgba(255,255,255, .1) 0%, rgba(0, 0, 0, .3) 100%); /* FF3.6+ */
+  background-image: -webkit-linear-gradient(135deg, rgba(255,255,255, .1) 0%, rgba(0, 0, 0, .3) 100%); /* Chrome10+,Safari5.1+ */
+  background-image: -o-linear-gradient(135deg, rgba(255,255,255, .1) 0%, rgba(0, 0, 0, .3) 100%); /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(135deg, rgba(255,255,255, .1) 0%, rgba(0, 0, 0, .3) 100%); /* IE10+ */
+  background-image: linear-gradient(135deg, rgba(255,255,255, .1) 0%, rgba(0, 0, 0, .3) 100%); /* W3C */
+
+  &:hover .circle {
+    
+  }
+  
+  #toggle-center-piece {
+    display: none
+  }
+  
+  label {
+    cursor: pointer;
+  }
+
+  .circle-wrapper {
+    $logo-size: $center-piece-size - 60px;
+    
+    width: $logo-size;
+    height: $logo-size;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -1 * $logo-size / 2;
+    margin-top: -1 * $logo-size / 2;
+    
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3);
+    
+    &, .front {
+      border-radius: $logo-size / 2;
+      overflow: hidden;
+    }
+    
+    .circle {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      
+      border-radius: $logo-size / 2;
+      overflow: hidden;
+    }
+    .circle {
+      -webkit-transform: rotate(0.000001deg);
+      -moz-transform: rotate(0.000001deg);
+      transform: rotate(0.000001deg);
+    }
+    #toggle-center-piece:checked + .front {
+      -webkit-transform: translateX(-100%);
+      -moz-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+    
+    .front {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      background: #fff;
+      z-index: 1;
+      text-align: center;
+      transition: .3s ease-in-out;
+    }
+    
+    .front span {
+      width: 100%;
+      padding: 20px;
+    }
+    
+    .back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+    }
+    
+    .back img {
+      width: 100%;  
+    }
+    
+    .contact {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      fill: #fff;
+      text-align: center;
+    }
+    
+    .contact label {
+      margin-top: 10%;
+      padding: 20px;
+      display: inline-block;
+      opacity: 0.5;
+    }
+    
+    .contact label .icon {
+      width: 14px;
+      height: 14px;
+    }
+    
+    .contact h1 {
+      position: absolute;
+      top: 39%;
+      font-size: 32px;
+      padding: 0;
+      margin: 0;
+      display: block;
+      width: 100%;
+    }
+    
+    .contact h1 small {
+      font-size: 0.5em;
+      display: block;
+    }
+    
+    .contact ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      position: absolute;
+      bottom: 15%;
+      left: 0;
+    }
+    
+    .contact li {
+      display: inline-block;
+    }
+    
+    .contact a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .contact a .icon {
+      width: 32px;
+      height: 32px;
+      padding: 10px;
+    }
+  }
+}
+
+#user-media {
+  display: none;
+}
